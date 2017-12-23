@@ -13,4 +13,12 @@
 
 Route::auth();
 
-Route::get('/', 'HomeController@index');
+/**
+ * 前段主要分组
+ */
+Route::group(['as' => 'home::'], function () {
+    Route::get('/', [
+        'as' => 'index_list',
+        'uses' => 'HomeController@index'
+    ]);
+});
