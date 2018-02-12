@@ -9,8 +9,7 @@ readme.md
 .idea/workspace.xml
 
 # ide
-.idea/
-/.idea/
+.idea
 
 home/storage/framework/views/
 home/storage/debugbar/
